@@ -2,9 +2,9 @@ package model;
 
 public class Customer {
 
-    // ───────────────────────────────
+    
     //  FIELDS  (matches DB columns)
-    // ───────────────────────────────
+    
 
     private int    accNo;
     private String custName;
@@ -52,10 +52,10 @@ public class Customer {
     }
 
 
-    // ───────────────────────────────
+    
     //  GETTERS  (view reads data
     //  through these, never directly)
-    // ───────────────────────────────
+    
 
     public int    getAccNo()      { return accNo;      }
     public String getCustName()   { return custName;   }
@@ -74,10 +74,10 @@ public class Customer {
     public int    getIsActive()   { return isActive;   }
 
 
-    // ───────────────────────────────
+    
     //  SETTERS  (DAO uses these
     //  when updating a record)
-    // ───────────────────────────────
+    
 
     public void setAccNo(int accNo)           { this.accNo      = accNo;      }
     public void setCustName(String custName)  { this.custName   = custName;   }
