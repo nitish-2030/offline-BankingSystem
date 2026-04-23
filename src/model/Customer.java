@@ -23,10 +23,10 @@ public class Customer {
     private int    isActive;
 
 
-    // ───────────────────────────────
+    
     //  CONSTRUCTOR  (used in DAO
     //  when we fetch from DB)
-    // ───────────────────────────────
+    
 
     public Customer(int accNo, String custName, String dob,
                     String fatherName, String gender, String address,
@@ -95,10 +95,10 @@ public class Customer {
     public void setIsActive(int isActive)     { this.isActive   = isActive;   }
 
 
-    // ───────────────────────────────
+    
     //  toString  (helpful for
     //  debugging, print customer info)
-    // ───────────────────────────────
+    
 
     @Override
     public String toString() {
