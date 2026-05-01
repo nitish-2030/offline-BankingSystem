@@ -9,17 +9,17 @@ import java.awt.event.*;
 
 public class SearchCustomerForm extends JInternalFrame implements ActionListener {
 
-    // ───────────────────────────────
+    
     //  DAO
-    // ───────────────────────────────
+    
 
     private CustomerDAO customerDAO;
 
 
-    // ───────────────────────────────
+    
     //  PANEL 1  (account number
     //  daalo, search karo)
-    // ───────────────────────────────
+    
 
     private JPanel     panel1      = new JPanel(null);
     private JLabel     lAccNo      = new JLabel("Account Number :");
@@ -27,10 +27,10 @@ public class SearchCustomerForm extends JInternalFrame implements ActionListener
     private JButton    btnSearch   = new JButton("SEARCH");
 
 
-    // ───────────────────────────────
+    
     //  PANEL 2  (customer details
     //  dikhao)
-    // ───────────────────────────────
+    
 
     private JPanel panel2 = new JPanel(null);
 
@@ -62,9 +62,9 @@ public class SearchCustomerForm extends JInternalFrame implements ActionListener
     private JButton btnClose = new JButton("CLOSE");
 
 
-    // ───────────────────────────────
+    
     //  CONSTRUCTOR
-    // ───────────────────────────────
+    
 
     public SearchCustomerForm(CustomerDAO customerDAO) {
         super("Search Customer", false, true, false, true);
@@ -116,9 +116,9 @@ public class SearchCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+    
     //  ACTION PERFORMED
-    // ───────────────────────────────
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -133,9 +133,9 @@ public class SearchCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+    
     //  searchCustomer
-    // ───────────────────────────────
+    
 
     private void searchCustomer() {
 
@@ -176,9 +176,9 @@ public class SearchCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+    
     //  HELPERS
-    // ───────────────────────────────
+    
 
     private void placeRow(JPanel p,
                           JLabel label, JLabel value,
