@@ -157,15 +157,28 @@ public class MainFrame implements ActionListener {
     //  aur focus do)
 
 
-    private void openForm(JInternalFrame form) {
-        jdp.add(form);
-        form.toFront();
-        try {
-            form.setSelected(true);
-        } catch (Exception ex) {
-            System.err.println("openForm() failed: " + ex.getMessage());
+   private void openForm(JInternalFrame form) {
+    // pehle se khula hai to sirf focus do
+    for (JInternalFrame f : jdp.getAllFrames()) {
+        if (f.getClass() == form.getClass()) {
+            try {
+                f.setSelected(true);
+                f.toFront();
+            } catch (Exception ex) {
+                System.err.println(ex.getMessage());
+            }
+            return;
         }
     }
+    // nahi khula to add karo
+    jdp.add(form);
+    form.toFront();
+    try {
+        form.setSelected(true);
+    } catch (Exception ex) {
+        System.err.println(ex.getMessage());
+    }
+}
 
 
     //  MAIN  (program yahan se
