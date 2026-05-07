@@ -9,17 +9,17 @@ import java.awt.event.*;
 
 public class DeleteCustomerForm extends JInternalFrame implements ActionListener {
 
-    // ───────────────────────────────
+    
     //  DAO
-    // ───────────────────────────────
+    
 
     private CustomerDAO customerDAO;
     private Customer    currentCustomer;
 
 
-    // ───────────────────────────────
+    
     //  PANEL 1  (account number)
-    // ───────────────────────────────
+   
 
     private JPanel     panel1   = new JPanel(null);
     private JLabel     lAccNo   = new JLabel("Account Number :");
@@ -27,9 +27,9 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     private JButton    btnFetch = new JButton("FETCH DETAILS");
 
 
-    // ───────────────────────────────
+    
     //  PANEL 2  (confirm delete)
-    // ───────────────────────────────
+    
 
     private JPanel panel2 = new JPanel(null);
 
@@ -53,9 +53,9 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     private JButton btnCancel = new JButton("CANCEL");
 
 
-    // ───────────────────────────────
+   
     //  CONSTRUCTOR
-    // ───────────────────────────────
+   
 
     public DeleteCustomerForm(CustomerDAO customerDAO) {
         super("Close Account", false, true, false, true);
@@ -108,9 +108,9 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+    
     //  ACTION PERFORMED
-    // ───────────────────────────────
+   
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -121,9 +121,9 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+    
     //  fetchCustomer
-    // ───────────────────────────────
+    
 
     private void fetchCustomer() {
 
@@ -153,10 +153,10 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+   
     //  deleteCustomer  (double
     //  confirm — serious action)
-    // ───────────────────────────────
+    
 
     private void deleteCustomer() {
 
@@ -187,9 +187,9 @@ public class DeleteCustomerForm extends JInternalFrame implements ActionListener
     }
 
 
-    // ───────────────────────────────
+   
     //  HELPERS
-    // ───────────────────────────────
+    
 
     private void placeRow(JPanel p,
                           JLabel label, JLabel value,

@@ -11,18 +11,18 @@ import java.awt.event.*;
 
 public class WithdrawForm extends JInternalFrame implements ActionListener {
 
-    // ───────────────────────────────
+  
     //  DAO
-    // ───────────────────────────────
+ 
 
     private CustomerDAO    customerDAO;
     private TransactionDAO transactionDAO;
     private Customer       currentCustomer;
 
 
-    // ───────────────────────────────
+   
     //  PANEL 1  (account number)
-    // ───────────────────────────────
+    
 
     private JPanel     panel1   = new JPanel(null);
     private JLabel     lAccNo   = new JLabel("Account Number :");
@@ -30,9 +30,9 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     private JButton    btnFetch = new JButton("FETCH DETAILS");
 
 
-    // ───────────────────────────────
+    
     //  PANEL 2  (withdraw screen)
-    // ───────────────────────────────
+    
 
     private JPanel     panel2    = new JPanel(null);
 
@@ -45,9 +45,9 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     private JButton btnCancel    = new JButton("CANCEL");
 
 
-    // ───────────────────────────────
+   
     //  CONSTRUCTOR
-    // ───────────────────────────────
+    
 
     public WithdrawForm(CustomerDAO customerDAO, TransactionDAO transactionDAO) {
         super("Amount Withdraw", false, true, false, true);
@@ -98,9 +98,9 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+    
     //  ACTION PERFORMED
-    // ───────────────────────────────
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -111,9 +111,8 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
     //  fetchCustomer
-    // ───────────────────────────────
+   
 
     private void fetchCustomer() {
 
@@ -139,10 +138,10 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+   
     //  doWithdraw  (balance check
     //  pehle — tab hi aage badhna)
-    // ───────────────────────────────
+   
 
     private void doWithdraw() {
 
@@ -199,9 +198,9 @@ public class WithdrawForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+    
     //  HELPER
-    // ───────────────────────────────
+   
 
     private void showError(String msg) {
         JOptionPane.showMessageDialog(this, msg,

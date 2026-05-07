@@ -9,16 +9,16 @@ import java.util.List;
 
 public class ShowAllFrame extends JInternalFrame {
 
-    // ───────────────────────────────
+
     //  DAO
-    // ───────────────────────────────
+   
 
     private CustomerDAO customerDAO;
 
 
-    // ───────────────────────────────
+   
     //  TABLE
-    // ───────────────────────────────
+  
 
     private String[] columns = {
         "Acc No", "Customer Name", "Father's Name",
@@ -36,9 +36,8 @@ public class ShowAllFrame extends JInternalFrame {
     private JScrollPane jsp  = new JScrollPane(table);
 
 
-    // ───────────────────────────────
     //  CONSTRUCTOR
-    // ───────────────────────────────
+    
 
     public ShowAllFrame(CustomerDAO customerDAO) {
         super("All Active Customers", false, true, true, true);
@@ -61,11 +60,11 @@ public class ShowAllFrame extends JInternalFrame {
     }
 
 
-    // ───────────────────────────────
+    
     //  loadData  (DAO se saari
     //  customers laao, table me
     //  bhar do)
-    // ───────────────────────────────
+    
 
     private void loadData() {
 

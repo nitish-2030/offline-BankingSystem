@@ -11,20 +11,20 @@ import java.awt.event.*;
 
 public class DepositForm extends JInternalFrame implements ActionListener {
 
-    // ───────────────────────────────
+    
     //  DAO  (do DAOs — customer
     //  balance update + transaction
     //  record save)
-    // ───────────────────────────────
+    
 
     private CustomerDAO    customerDAO;
     private TransactionDAO transactionDAO;
     private Customer       currentCustomer;
 
 
-    // ───────────────────────────────
+    
     //  PANEL 1  (account number)
-    // ───────────────────────────────
+    
 
     private JPanel     panel1   = new JPanel(null);
     private JLabel     lAccNo   = new JLabel("Account Number :");
@@ -47,9 +47,9 @@ public class DepositForm extends JInternalFrame implements ActionListener {
     private JButton btnCancel  = new JButton("CANCEL");
 
 
-    // ───────────────────────────────
+    
     //  CONSTRUCTOR
-    // ───────────────────────────────
+   
 
     public DepositForm(CustomerDAO customerDAO, TransactionDAO transactionDAO) {
         super("Amount Deposit", false, true, false, true);
@@ -100,9 +100,9 @@ public class DepositForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+    
     //  ACTION PERFORMED
-    // ───────────────────────────────
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -113,9 +113,8 @@ public class DepositForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
-    //  fetchCustomer
-    // ───────────────────────────────
+        //  fetchCustomer
+    
 
     private void fetchCustomer() {
 
@@ -143,11 +142,11 @@ public class DepositForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+
     //  doDeposit  (do kaam ek saath
     //  — balance update + transaction
     //  save)
-    // ───────────────────────────────
+   
 
     private void doDeposit() {
 
@@ -194,9 +193,9 @@ public class DepositForm extends JInternalFrame implements ActionListener {
     }
 
 
-    // ───────────────────────────────
+    
     //  HELPER
-    // ───────────────────────────────
+   
 
     private void showError(String msg) {
         JOptionPane.showMessageDialog(this, msg,
